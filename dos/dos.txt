@@ -1,2 +1,10 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+Vulnerability: The vulnerability involves insufficient authentication and authorization mechanisms in a web application, allowing unauthorized users to access restricted resources or perform privileged actions. Without proper authentication, attackers can impersonate legitimate users or gain unauthorized access to sensitive functionalities and data. Insufficient authorization controls may enable attackers to perform actions beyond their privileges, such as viewing or modifying confidential information.
+
+Secure Version Prevention: The secure version of the web application implements robust authentication and authorization mechanisms. This involves employing strong authentication methods (like multi-factor authentication) to verify the identity of users before granting access to the application. Additionally, the application enforces fine-grained access controls, ensuring that users can only access resources and perform actions that are appropriate for their roles and privileges. By implementing these security measures, the application prevents unauthorized access and protects sensitive data from unauthorized manipulation or disclosure.
+
+Additional Security Mechanisms:
+Session Management: Implement secure session management techniques, such as using random session identifiers, setting session expiration times, and employing secure session cookies to prevent session hijacking and fixation attacks.
+Input Validation and Sanitization: Implement rigorous input validation and data sanitization techniques to prevent injection attacks, including SQL injection, cross-site scripting (XSS), and command injection.

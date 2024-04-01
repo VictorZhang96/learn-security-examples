@@ -1,3 +1,15 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 Which CIA property does tampering violate?
 What additional security mechanisms can you incorporate?
+
+Vulnerability: The vulnerability in question is related to unvalidated input in a web application, specifically in a form field where users can input data. Without proper validation, attackers can inject malicious code (such as SQL injection or cross-site scripting) into the application, potentially leading to data breaches, unauthorized access, or other security compromises.
+
+Secure Version Prevention: The secure version of the web application implements input validation mechanisms. This involves checking and sanitizing user input to ensure it meets expected criteria, such as type, length, format, and character set. Additionally, the application may employ techniques like parameterized queries for database interactions and output encoding to prevent injection attacks. By validating and sanitizing input, the application prevents malicious code injection and significantly reduces the risk of exploitation.
+
+CIA Property Violated: Tampering violates the integrity aspect of the CIA (Confidentiality, Integrity, Availability) triad. Tampering refers to unauthorized alterations or modifications to data or systems, compromising the accuracy, reliability, and trustworthiness of the information.
+
+Additional Security Mechanisms:
+
+Input Validation: Strengthen input validation by implementing strict rules and filters to block out potentially harmful input.
+Output Encoding: Encode output to prevent injection attacks and ensure that any data presented to users is safe and free from malicious scripts.
+User Authentication and Access Control: Enforce strong authentication mechanisms and access controls to ensure that only authorized users can access sensitive functionalities and data.
